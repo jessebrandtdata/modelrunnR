@@ -19,3 +19,5 @@ modelrunnR_artifacts/
 
 # Local MCP config (curated btw R-dev server; per-worker, never committed)
 .mcp.json
+# specs and plans live in jessebrandtdata/specs
+docs/superpowers/
