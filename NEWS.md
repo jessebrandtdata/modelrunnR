@@ -40,7 +40,7 @@ landed last.
   outside `launch()` it's the latest run that wrote to the name, with
   system columns stripped. Pass `run = "all"` for the full
   cross-run view with `run_id` + `variant_label` exposed. See
-  `docs/superpowers/specs/2026-04-22-append-mode-stow-design.md` for
+  `specs:modelrunnR/specs/2026-04-22-append-mode-stow-design.md` for
   the design rationale.
 
 ## New features
@@ -114,7 +114,7 @@ landed last.
   unaffected. JSON-shaped columns (`inputs`, `outputs`, `external_inputs`,
   `helpers`, `rebinds`, `attached_packages`) are surfaced as plain `chr`;
   parse on demand with `jsonlite::fromJSON()`. See
-  `docs/superpowers/specs/2026-04-25-runs-accessor-design.md`.
+  `specs:modelrunnR/specs/2026-04-25-runs-accessor-design.md`.
 
 ## Storage
 

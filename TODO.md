@@ -29,7 +29,7 @@ and the simple SQL-text hash isn't quietly mistaken for content-aware.
 
 Surfaced by the final whole-branch review of `fix/queue-audit` after the
 unification spec landed (see
-`docs/superpowers/specs/2026-04-29-queue-launch-unification-design.md`
+`specs:modelrunnR/specs/2026-04-29-queue-launch-unification-design.md`
 and the corresponding plan). All four are low-priority polish — none
 block the unification work itself.
 
@@ -147,7 +147,7 @@ Today `grab(name, source = path)` accepts a path string. After the
 to express "this path is a file source." For symmetry, `grab()` should
 accept `grab(name, source = mr_file(path))` (or `grab(mr_file(path),
 name)`) without breaking the current path-string form. Spec:
-docs/superpowers/specs/2026-04-26-stow-unification-design.md
+specs:modelrunnR/specs/2026-04-26-stow-unification-design.md
 ("Non-goals / deferred").
 
 ### Hard-remove `ingest()` after one release cycle
@@ -564,7 +564,7 @@ a lazy tbl with `run_id`/`variant_label` columns instead of a bare
 tbl — update downstream `collect()` + column selection accordingly.
 
 Other follow-ups from the plan are tracked in the plan's completion
-checklist (`docs/superpowers/plans/2026-04-23-append-mode-stow-impl.md`):
+checklist (`specs:modelrunnR/plans/2026-04-23-append-mode-stow-impl.md`):
 `.mr_reset_append()` user-facing promotion, lazy-path type coercion,
 block-level transaction semantics, and the §12 versioned-shape reorg.
 
@@ -633,7 +633,7 @@ run's metrics sit in their own `metrics__<hash>` physical table, and
   already handles cleanup.
 
 **Still to sort in the spec (write under
-`docs/superpowers/specs/2026-04-22-append-mode-stow-design.md`):**
+`specs:modelrunnR/specs/2026-04-22-append-mode-stow-design.md`):**
 
 - Hash contract / staleness for a growing table. Likely: hash the
   appended chunk, not the whole table.
@@ -700,7 +700,7 @@ adds setup overhead. Worth investing in a 5-line setup so the
 
 ### Spec ↔ vignette drift
 
-`docs/superpowers/specs/2026-04-19-batch-launch-design.md`
+`specs:modelrunnR/specs/2026-04-19-batch-launch-design.md`
 section "## Vignette (feature guide)" duplicates the shipped
 vignette nearly verbatim. Drift over time is likely. Consider
 replacing the spec section with a one-line pointer at
