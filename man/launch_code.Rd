@@ -26,7 +26,7 @@ stored on the run row at launch time, so there is only one source
 to read from.
 
 For script runs (\code{launch("fit.R")}), there are two possible
-sources: the script file as it currently sits on disk, and the
+sources: the script file as it currently exists on disk, and the
 snapshot of the file bytes recorded on the run row at launch time.
 By default, \code{launch_code()} reads the file on disk -- the current
 file \emph{is} the pipeline -- and falls back to the stored snapshot
