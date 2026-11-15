@@ -6,7 +6,7 @@
 
 1. **Don't break `../practicum_repos/final_practicum`.** If a change would break it, ASK before proceeding.
 2. **`R CMD check` must pass before claiming a task done.** "Tests pass" is not enough on its own.
-3. **Spec primacy.** When a spec exists for the work (under `docs/superpowers/specs/`), the implementation matches it. Deviations are SURFACED, not silently chosen.
+3. **Spec primacy.** When a spec exists for the work (under `specs:modelrunnR/specs/`), the implementation matches it. Deviations are SURFACED, not silently chosen.
 4. **Schema migrations are append-only.** Add nullable columns; never drop or rename existing columns in `_mr_runs` / `_mr_versions` / other backend tables without ASK. Users have DuckDB stores in the wild and renames are unrecoverable.
 5. **Exported API is a contract.** Don't change the signature of an `@export`'d function, rename an exported symbol, or remove `@export` without ASK.
 6. **No new `Imports:` without ASK.** Per CLAUDE.md, the package stays lean.
@@ -41,7 +41,7 @@ ASK/SURFACE post immediately and only block dependent work — see north-star-ex
 
 1. Read `north_star.md`
 2. Read this framework
-3. Read the active spec(s) under `docs/superpowers/specs/` (most recent first)
+3. Read the active spec(s) under `specs:modelrunnR/specs/` (most recent first)
 4. Skim `TODO.md`
 5. `git status` and `git log --oneline -5`
 6. **State intent:** current task, files to touch, invariants in play, session mode (interactive / autonomous)
